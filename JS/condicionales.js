@@ -23,9 +23,10 @@ if (porcentaje > 16){
     alert('No ceder más del 16%')
     } 
 
+    //Calculo de precio de venta
     else {
         let porcentajeMUP1 = 100 - porcentajeMUP;
         let porcentajeMUP2 = porcentajeMUP1 / 100;
         let Venta = neto / porcentajeMUP2;
-        alert('el MUP es: ' + Venta.toFixed(2));
+        alert('el Precio de venta es: ' + Venta.toFixed(2));
       }
