@@ -8,24 +8,24 @@ console.log('Desglose de para cotización');
 // calcular IVA (21%) de ganancia
 // informar desglose
 
-let neto = prompt('Digite el precio neto')
-let porcentajeMUP = prompt('Digite porcentaje Mark Up')
-let porcentaje = prompt('Digite porcentaje a ceder');
-
-//porcentajeMUP se divide 100 para realizar calculo correcto
-//venta es neto / mup
-
+let neto = prompt('Digite el precio neto');
 if (neto <= 0){
     alert('el neto debe ser mayor a 0')
 }
 
+let porcentajeMUP = prompt('Digite porcentaje Mark Up');
 if (porcentajeMUP < 20){
     alert('el MUP no debe ser menor a 20')
-    }
+    } 
 
+let porcentaje = prompt('Digite porcentaje a ceder');
 if (porcentaje > 16){
     alert('No ceder más del 16%')
-}   else {
-        let porcentajeMUP1 = 100 - porcentajeMUP
-        let porcentajeMUP2 = porcentajeMUP1 / 100        
-    }    
+    } 
+
+    else {
+        let porcentajeMUP1 = 100 - porcentajeMUP;
+        let porcentajeMUP2 = porcentajeMUP1 / 100;
+        let Venta = neto / porcentajeMUP2;
+        alert('el MUP es: ' + Venta.toFixed(2));
+      }
